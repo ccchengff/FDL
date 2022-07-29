@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package fdl.federation;
+
+enum Status {
+  SUCCESS = 0;
+  ERROR = 1;
+  NOT_READY = 2;
+  FATAL = 3;
+}
+
+message Response {
+  Status status = 1;
+  string err_msg = 2;
+}
+
+message KVPair {
+  string key = 1;
+  string value = 2;
+}

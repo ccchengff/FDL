@@ -1,0 +1,28 @@
+syntax = "proto3";
+import "fdl/federation/common.proto";
+
+package fdl.federation.channel;
+
+service MessageChannelService {
+  rpc ConnectChannel(ConnectChannelRequest) returns (Response) {}
+  rpc SendMsg(MsgRequest) returns (Response) {}
+  rpc ShutdownChannel(ShutdownChannelRequest) returns (Response) {}
+}
+
+message ConnectChannelRequest {
+  string task_id = 1;
+  string party = 2;
+  int32 rank = 3;
+}
+
+message MsgRequest {
+  string topic_name = 1;
+  int32 msg_id = 2;
+  bytes content = 3;
+}
+
+message ShutdownChannelRequest {
+  string task_id = 1;
+  string party = 2;
+  int32 rank = 3;
+}

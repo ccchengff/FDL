@@ -1,0 +1,45 @@
+# Python
+.mypy_cache
+*/*.pyc
+*/*.so*
+*/**/__pycache__
+*/**/*.dylib*
+*/**/*.pyc
+*/**/*.pyd
+*/**/*.so*
+*/**/**/*.pyc
+*/**/**/**/*.pyc
+*/**/**/**/**/*.pyc
+build/
+dist/
+env/
+eggs/
+logs/
+ckpt/
+
+# IPython notebook checkpoints
+.ipynb_checkpoints
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VSCode
+.vscode
+
+# PyCharm
+.idea
+
+# DS_Store
+.DS_Store
+
+# grpc
+*_pb2.py
+*_pb2_grpc.py
+
