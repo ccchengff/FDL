@@ -1,0 +1,7 @@
+channel_type: grpc
+parties:
+    guest:
+        channel_address: "ip1:50021"
+    host:
+        channel_address: "ip2:50022"
+
